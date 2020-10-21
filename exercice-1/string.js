@@ -19,7 +19,7 @@ function camelCase(chaine)
 function snake_case(chaine)
 {
     if(typeof chaine !== "string" || chaine === "") return "";
-    return chaine.split(' ').join('_');
+    return chaine.split(' ').map(s=> s.toLocaleLowerCase()).join('_');
 }
- console.log(capitalize('je suis un tEst'));
-// console.log(snakeCase_case('je suis un test'));
+//  console.log(capitalize('je suis un tEst'));
+// console.log(snake_case('je sUIs UN test'));
